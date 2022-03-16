@@ -1,0 +1,39 @@
+/*
+ ==============================================================================
+ =====================  DO NOT DELETE ME START ================================
+ ==============================================================================
+*/ 
+
+ 
+/* ============================== INSERT Reply id  '1' ==========
+ * on 2007-12-24 07:59:38 am
+ * */
+INSERT INTO `replies`(`user_id`,`re_title`,`re_body`,`created_at`,
+`updated_at`)VALUES(
+    '1',
+    'this i my first reply to you',
+    '<p>hi there i know this very easy method for me to subscription ha ha&nbsp;</p>',
+    '2007-12-24 07:59:38',
+    '2007-12-24 07:59:38');
+ 
+
+/* ============================== INSERT Reply id  '1' ==========
+ * on 2007-12-24 07:59:38 am
+ * */
+INSERT INTO `replies`(`user_id`,`re_title`,`re_body`,`created_at`,
+`updated_at`)VALUES(
+    '2',
+    'this is first reply from kenny reply to you',
+    '
+    <p class="title">ha ha you are so funny</p>
+    <p>hi there i know this very easy method for me to subscription ha ha&nbsp;</p>',
+    '2007-12-24 07:59:38',
+    '2007-12-24 07:59:38');
+
+
+/*
+ ==============================================================================
+ =====================  DO NOT DELETE ME END ==================================
+ ==============================================================================
+*/ 
+ 

@@ -1,0 +1,41 @@
+/*
+    ======================== DO NOT DELETE ME =================================
+    ============ THIS IS THE DEFAULT DATA PLEASE DO NOT DELETE ================
+    ===========================================================================
+*/
+
+/* ========================== Backup whatup id 3 ==========================
+ * on date 2007-10-29 19:11:13 pm
+ * */
+INSERT INTO `whatups`(`user_id`,`wp_title`,`wp_body`,`is_public`,`created_at`,
+`updated_at`) VALUES(
+    '1',
+    'setup your project in different directory name',
+    '
+    <p class="title has-text-centered has-text-danger">
+        I am your backup do not delete me.
+    </p>
+    <p>
+
+if your project folder is not "blp.proj" please make sure that you edit the 
+file  "app/config/sanctum.php" you may have your project folder into the list 
+of "stateful" just to prevent from having a login problem "cannot set token"
+    
+    </p> 
+
+    ',
+    '1',
+    '2007-10-29 19:11:13',
+    '2007-10-29 19:11:13');
+ 
+ 
+/*
+    ======================== DO NOT DELETE ME =================================
+    ============ THIS IS THE DEFAULT DATA PLEASE DO NOT DELETE ================
+    ===========================================================================
+*/
+
+
+
+
+

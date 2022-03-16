@@ -1,0 +1,35 @@
+/*
+    ======================== DO NOT DELETE ME =================================
+    ============ THIS IS THE DEFAULT DATA PLEASE DO NOT DELETE ================
+    ===========================================================================
+*/
+
+
+/* ================= INSERT command for blog id 1 
+ * on 2007-10-29 12:39:14 pm
+ * */
+INSERT INTO `blog_category`(`blog_id`,`category_id`) VALUES('1',
+'1');
+  
+ 
+ 
+/*
+    ======================== DO NOT DELETE ME =================================
+    ============ THIS IS THE DEFAULT DATA PLEASE DO NOT DELETE ================
+    ===========================================================================
+*/
+
+ 
+/* ================= INSERT command for blog id 2 
+ * on 2022-02-25 21:10:34 pm
+ * */
+INSERT INTO `blog_category`(`blog_id`,`category_id`) VALUES('2',
+'2');
+  
+
+
+/* ================= INSERT command for blog id 2 
+ * on 2022-02-25 21:10:34 pm
+ * */
+INSERT INTO `blog_category`(`blog_id`,`category_id`) VALUES('3',
+'3');

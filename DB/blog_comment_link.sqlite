@@ -1,0 +1,26 @@
+/*
+   =================== DO NOT DELETE ======================================== 
+
+*/ 
+/* ========================== INSERT blog link '1' ==================
+ * link comment id '1' to blog id '1' 
+ * on 2022-02-24 06:25:57 am
+ * */
+INSERT INTO `blog_comment`(`blog_id`,`comment_id`) VALUES(
+    '1',
+    '1');
+ 
+
+ /*
+    ====================== DO NOT DELETE ME END ==============================
+
+ */
+ 
+/* ========================== INSERT blog link '1' ==================
+ * link comment id '2' to blog id '1' 
+ * on 2022-02-25 17:31:50 pm
+ * */
+INSERT INTO `blog_comment`(`blog_id`,`comment_id`) VALUES(
+    '1',
+    '2');
+ 

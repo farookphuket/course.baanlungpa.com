@@ -1,0 +1,33 @@
+/*  ===========================================================================
+    ========================== DO NOT DELETE ME START  ========================
+    ===========================================================================
+*/
+
+/* ============================== INSERT Comment id  '1' ==========
+ * on 2007-09-20 06:25:57 am
+ * */
+INSERT INTO `comments`(`user_id`,`co_title`,`co_body`,`created_at`,
+`updated_at`)VALUES(
+    '1',
+    'to leave a comment is easy as typing',
+    '<p>this is the first comment from me in this post</p>',
+    '2007-09-20 06:25:57',
+    '2007-09-20 06:25:57');
+ 
+
+/*  ===========================================================================
+    ========================== DO NOT DELETE ME END ===========================
+    ===========================================================================
+*/
+ 
+/* ============================== INSERT Comment id  '2' ==========
+ * on 2022-02-25 17:31:50 pm
+ * */
+INSERT INTO `comments`(`user_id`,`co_title`,`co_body`,`created_at`,
+`updated_at`)VALUES(
+    '2',
+    'this is very cool i like it',
+    '<p>hi there I know you are not available now but i just want to tell you that the moment here is very cool!!</p>',
+    '2022-02-25 17:31:50',
+    '2022-02-25 17:31:50');
+ 

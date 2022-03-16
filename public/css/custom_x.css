@@ -1,0 +1,142 @@
+
+
+
+#app header .logo{
+    width:75px;
+}
+
+#app header .logo img{
+    min-height:45px;
+}
+
+/*
+#app .hero{
+    border:2px solid #ff0000;
+    background: url('/img/baanlungpa_bg1.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-width:100vh;
+}
+*/ 
+
+#app section.hero.is-danger.is-fullheight{
+    /*border:2px solid #ff0000; */
+    background: url('/img/baanlungpa_logo1_cut.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: contain;
+    -moz-background-position: center;
+    -o-background-size: cover;
+    background-size: contain;
+    background-position: center;
+    /*min-width:100vh;*/
+}
+
+
+
+#app .body_content{
+    min-height:100vh;
+}
+
+#app  section.body_content{
+    margin-top:6em;
+    padding:0.7em;
+}
+
+#app label.checkbox input[type='checkbox']{
+    width:30px;
+    height:30px;
+    vertical-align:middle;
+}
+
+
+#app label.checkbox span{
+    margin:0 1.5px;
+    font-size:1.2em;
+    font-weight:bold;
+    color:blue;
+}
+
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+    }
+    
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.sound-container {
+    position: relative;
+    padding-bottom: 8.4%;
+    padding-top: 6px; height: 0; overflow: hidden;
+    }
+    
+.sound-container iframe,
+.sound-container object,
+.sound-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*
+ * Dropdown-menu 28 Feb 2022 
+ * from https://codepen.io/sakthig/pen/RvwVYM?editors=1100
+ * */
+.nested.dropdown{
+    &:hover > .dropdown-menu{
+        display:block;
+    }
+
+}
+
+
+@media (max-width:760px){
+    
+    #app section.hero.is-danger.is-fullheight{
+        /*border:2px solid #ff0000; */
+        background: url('/img/baanlungpa_bg1.png');
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-repeat:no-repeat;
+        background-size: contain;
+        background-position:center;
+    }
+
+    #app  section.body_content{
+        margin-top:4em;
+        padding:0.7em;
+    }
+
+    #app section.body_content div.columns.is-mobile{
+        display:block;
+    }
+
+    #app section.body_content div.columns.is-mobile > .column.is-4 {
+        flex: none;
+        width: 100%;
+    }
+
+
+
+
+
+    
+}

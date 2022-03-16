@@ -1,0 +1,31 @@
+/* ================ created link the read id '1' =============
+ * to blog_id '1' on 2007-02-17 12:22:13 pm
+ * */
+INSERT INTO `blog_read`(`blog_id`,`read_id`,`ip`,`readed_at`)VALUES(
+'1',
+'1',
+'127.0.13.1',
+'2007-10-17 12:22:13');
+ 
+ 
+ 
+/* ================ created link the read id '2' =============
+ * to blog_id '1' on 2022-02-21 06:15:25 am
+ * */
+INSERT INTO `blog_read`(`blog_id`,`read_id`,`ip`,`readed_at`)VALUES(
+'2',
+'2',
+'127.0.0.12',
+'2007-10-21 06:15:25');
+  
+ 
+ 
+/* ================ created link the read id '3' =============
+ * to blog_id '2' on 2022-03-06 08:22:50 am
+ * */
+INSERT INTO `blog_read`(`blog_id`,`read_id`,`ip`,`readed_at`)VALUES(
+'2',
+'3',
+'127.0.0.1',
+'2022-03-06 08:22:50');
+ 

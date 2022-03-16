@@ -1,0 +1,54 @@
+/*
+    ======================== DO NOT DELETE ME =================================
+    ============ THIS IS THE DEFAULT DATA PLEASE DO NOT DELETE ================
+    ===========================================================================
+*/
+
+/* ======================= insert read id 1
+ * on 2007-10-29 12:22:13 pm
+ * */
+INSERT INTO `reads` (`ip`,`os`,`device`,`browser`,`created_at`,
+`updated_at`) VALUES(
+    '127.0.0.1',
+    'Linux Ubuntu',
+    'WebKit',
+    'Chrome 97.0.4692.71',
+    '2007-10-29 12:22:13',
+    '2007-10-29 12:22:13');
+ 
+
+/*
+    ======================== DO NOT DELETE ME =================================
+    ============ THIS IS THE DEFAULT DATA PLEASE DO NOT DELETE ================
+    ===========================================================================
+*/
+ 
+ 
+
+
+ 
+/* ======================= insert read id 2
+ * on 2022-02-24 09:17:53 am
+ * */
+INSERT INTO `reads` (`ip`,`os`,`device`,`browser`,`created_at`,
+`updated_at`) VALUES(
+    '127.0.0.1',
+    'iOS 10_3_1',
+    'iPhone',
+    'Safari 10.0',
+    '2022-02-24 09:17:53',
+    '2022-02-24 09:17:53');
+  
+ 
+/* ======================= insert read id 3
+ * on 2022-03-06 08:22:50 am
+ * */
+INSERT INTO `reads` (`ip`,`os`,`device`,`browser`,`created_at`,
+`updated_at`) VALUES(
+    '127.0.0.1',
+    'Linux ',
+    'WebKit',
+    'Chrome 97.0.4692.71',
+    '2022-03-06 08:22:50',
+    '2022-03-06 08:22:50');
+ 

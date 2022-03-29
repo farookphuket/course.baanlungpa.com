@@ -39,6 +39,48 @@ INSERT INTO `role_user`(`user_id`,`role_id`) VALUES(
     '4',
     '3');
 
+
+
+INSERT INTO `role_user`(`user_id`,`role_id`) VALUES(
+    '5',
+    '2');
+
+INSERT INTO `role_user`(`user_id`,`role_id`) VALUES(
+    '5',
+    '3');
+
+
+INSERT INTO `role_user`(`user_id`,`role_id`) VALUES(
+    '6',
+    '2');
+
+INSERT INTO `role_user`(`user_id`,`role_id`) VALUES(
+    '6',
+    '4');
+
+INSERT INTO `role_user`(`user_id`,`role_id`) VALUES(
+    '7',
+    '2');
+
+INSERT INTO `role_user`(`user_id`,`role_id`) VALUES(
+    '7',
+    '4');
+
+
+INSERT INTO `role_user`(`user_id`,`role_id`) VALUES(
+    '8',
+    '2');
+INSERT INTO `role_user`(`user_id`,`role_id`) VALUES(
+    '8',
+    '4');
+
+INSERT INTO `role_user`(`user_id`,`role_id`) VALUES(
+    '9',
+    '2');
+INSERT INTO `role_user`(`user_id`,`role_id`) VALUES(
+    '9',
+    '4');
+
 /*
     ======================== DO NOT DELETE ME =================================
     ============ THIS IS THE DEFAULT DATA PLEASE DO NOT DELETE ================

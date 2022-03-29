@@ -1,7 +1,6 @@
 <template>
     <section class="body_content">
         <div class="container">
-            <p>this is teacher {{isTeacher}}</p>
             <whatup></whatup>
         </div>
     </section>
@@ -16,6 +15,7 @@ export default{
     data(){
         return{
             isTeacher:false,
+            isStudent:false,
         }
     },
     mounted(){
@@ -24,6 +24,7 @@ export default{
     methods:{
         getWhoIs(){
             this.isTeacher = window.lsDefault.user_is_teacher
+            this.isStudent = window.lsDefault.user_is_student
         },
     }
 }

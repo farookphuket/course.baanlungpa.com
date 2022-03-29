@@ -6,7 +6,7 @@
                 There is no Course yet!
             </p>
         </div>
-        <div class="columns is-mobile" v-else>
+        <div class="columns is-mobile is-multiline" v-else>
 
             <div class="column is-4 list-4 " 
                 v-for="co in courses.data">
@@ -15,7 +15,12 @@
                 <div class="card">
                   <div class="card-image">
                     <figure class="image is-4by3">
-                      <img :src="co.course_cover" alt="Placeholder image">
+                        <a href="" 
+                            @click.prevent="openCourse(co.id)">
+                            <img 
+                            :src="co.course_cover" :alt="co.course_name">
+                        </a>
+
                     </figure>
                   </div>
                   <div class="card-content">
@@ -23,8 +28,8 @@
                       <div class="media-left">
                         <figure class="image is-48x48">
                           <img 
-                          src="https://bulma.io/images/placeholders/96x96.png" 
-                          alt="Placeholder image">
+                          :src="co.course_cover" 
+                          :alt="co.course_name">
                         </figure>
                       </div>
                       <div class="media-content">
@@ -49,6 +54,24 @@
                       </span>
 
                     </div>
+
+                    <div class="pb-4 mt-2" v-if="isOwner === co.user.id">
+                        <div class="field is-pulled-right">
+                            <button class="button 
+                                is-primary is-rounded is-small is-outlined mr-2" 
+                                @click.prevent="$emit('edit',co.id)">
+                                <font-awesome-icon 
+                                    icon="edit"></font-awesome-icon>
+                            </button>
+                            <button class="button 
+                                is-danger is-rounded is-small is-outlined" 
+                                @click.prevent="$emit('del',co.id)">
+                                <font-awesome-icon 
+                                    icon="trash"></font-awesome-icon>
+                            </button>
+                        </div>
+                    </div>
+
                   </div>
                 </div>
                 <!-- show list as card END -->
@@ -68,7 +91,17 @@ export default{
     data(){
         return{
             moment:moment,
+            isOwner:false,
         }
+    },
+    mounted(){
+        this.isOwner = window.lsDefault.user_id
+    },
+    methods:{
+        openCourse(id){
+            let url = `/course/${id}`
+            location.href=url
+        },
     },
 }
 </script>

@@ -7,25 +7,49 @@ INSERT INTO `blog_read`(`blog_id`,`read_id`,`ip`,`readed_at`)VALUES(
 '127.0.13.1',
 '2007-10-17 12:22:13');
  
+
+
  
  
 /* ================ created link the read id '2' =============
  * to blog_id '1' on 2022-02-21 06:15:25 am
  * */
 INSERT INTO `blog_read`(`blog_id`,`read_id`,`ip`,`readed_at`)VALUES(
+'3',
 '2',
-'2',
-'127.0.0.12',
+'223.24.154.236',
 '2007-10-21 06:15:25');
   
  
  
 /* ================ created link the read id '3' =============
- * to blog_id '2' on 2022-03-06 08:22:50 am
+ * to blog_id '3' on 2022-03-13 13:09:03 pm
  * */
 INSERT INTO `blog_read`(`blog_id`,`read_id`,`ip`,`readed_at`)VALUES(
-'2',
 '3',
-'127.0.0.1',
-'2022-03-06 08:22:50');
- 
+'3',
+'49.237.15.19',
+'2022-03-13 13:09:03');
+  
+
+
+/* ================ created link the read id '3' =============
+ * to blog_id '5' on 2022-03-13 18:58:35 pm
+ * */
+INSERT INTO `blog_read`(`blog_id`,`read_id`,`ip`,`readed_at`)VALUES(
+'5',
+'4',
+'27.55.89.244',
+'2022-03-13 18:58:35');
+
+
+  
+/* ================ created link the read id '5' =============
+ * to blog_id '5' on 2022-03-14 08:15:38 am
+ * */
+INSERT INTO `blog_read`(`blog_id`,`read_id`,`ip`,`readed_at`)VALUES(
+'5',
+'5',
+'223.24.94.165',
+'2022-03-14 08:15:38');
+  

@@ -7,7 +7,12 @@
         <article class="box" 
             v-for="c in classrooms.data" 
             >
-            <p class="title">{{c.class_title}}</p>
+            <p class="title">
+                <a href="" 
+                    @click.prevent="$emit('openClass',c.id)">
+                    {{c.class_title}}
+                </a>
+            </p>
         </article>
     </div>
 </template>

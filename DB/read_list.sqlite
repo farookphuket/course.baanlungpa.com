@@ -25,30 +25,55 @@ INSERT INTO `reads` (`ip`,`os`,`device`,`browser`,`created_at`,
  
  
 
-
- 
 /* ======================= insert read id 2
- * on 2022-02-24 09:17:53 am
+ * on 2022-02-25 22:31:45 pm
  * */
 INSERT INTO `reads` (`ip`,`os`,`device`,`browser`,`created_at`,
 `updated_at`) VALUES(
-    '127.0.0.1',
-    'iOS 10_3_1',
-    'iPhone',
-    'Safari 10.0',
-    '2022-02-24 09:17:53',
-    '2022-02-24 09:17:53');
-  
+    '223.24.154.236',
+    'AndroidOS 10',
+    'Xiaomi',
+    'Chrome 89.0.4389.116',
+    '2022-02-25 22:31:45',
+    '2022-02-25 22:31:45');
+ 
  
 /* ======================= insert read id 3
- * on 2022-03-06 08:22:50 am
+ * on 2022-03-13 13:09:03 pm
  * */
 INSERT INTO `reads` (`ip`,`os`,`device`,`browser`,`created_at`,
 `updated_at`) VALUES(
-    '127.0.0.1',
-    'Linux ',
+    '49.237.15.19',
+    'iOS 15_3',
+    'iPhone',
+    'Safari 604.1',
+    '2022-03-13 13:09:03',
+    '2022-03-13 13:09:03');
+  
+  
+/* ======================= insert read id 4
+ * on 2022-03-14 16:34:14 pm
+ * */
+INSERT INTO `reads` (`ip`,`os`,`device`,`browser`,`created_at`,
+`updated_at`) VALUES(
+    '61.90.31.83',
+    'iOS 15_3_1',
+    'iPhone',
+    'Safari ',
+    '2022-03-14 16:34:14',
+    '2022-03-14 16:34:14');
+  
+  
+/* ======================= insert read id 5
+ * on 2022-03-28 09:12:02 am
+ * */
+INSERT INTO `reads` (`ip`,`os`,`device`,`browser`,`created_at`,
+`updated_at`) VALUES(
+    '223.24.153.88',
+    'AndroidOS 7.1.1',
     'WebKit',
-    'Chrome 97.0.4692.71',
-    '2022-03-06 08:22:50',
-    '2022-03-06 08:22:50');
+    'Chrome 98.0.4758.101',
+    '2022-03-28 09:12:02',
+    '2022-03-28 09:12:02');
+  
  

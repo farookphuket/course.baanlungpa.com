@@ -5,7 +5,6 @@
             <course-form :editId="editId"  
                 :classrooms="classrooms" 
                 :isNoClassRoom="isNoClassRoom" 
-                :autoCourse_id="autoCourse_id"
                 @showBox="showBox($event)"  
                 @getCourse="getCourse($event)" ></course-form>
 
@@ -40,7 +39,6 @@ export default{
             isNoClassRoom:false,
             isNoCourse:false,
             res_status:'',
-            autoCourse_id:'',
         }
     },
     mounted(){
@@ -68,10 +66,8 @@ export default{
                     Object.values(coData.data).length === 0){
                         //console.log(coData.data.length)
                         this.isNoCourse = true
-                        this.autoCourse_id = 1
                     }else{
                         //console.log(coData.data.length)
-                        this.autoCourse_id = coData.data.length+1
                         this.isNoCourse = false
                     }
 
@@ -103,7 +99,15 @@ export default{
             this.editId = id
         },
         del(id){
-            alert(`this will delete ${id}`)
+            if(id && id !== 0 && 
+                confirm(`delete course id ${id}?`) !== false){
+                let url = `/api/teacher/course/${id}`
+                axios.delete(url)
+                    .then(res=>{
+                        this.res_status = res.data.msg
+                        this.showBox({msg:this.res_status,timeout:3200})
+                    })
+            }
         },
     },
 }

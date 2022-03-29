@@ -61,6 +61,7 @@
                     </div>
                 </div>
 
+
                 <div class="mb-6 pb-4">
                     <div class="columns is-mobile">
                         <div class="column">
@@ -87,7 +88,10 @@
 <script>
 export default{
     name:"ClassForm",
-    props:["editId"],
+    components:{
+
+    },
+    props:["editId","student"],
     data(){return{
         cForm:new Form({
             class_title:'',
@@ -96,7 +100,7 @@ export default{
             class_year:'',
         }),
         res_status:'',
-        curYear:new Date().getFullYear()
+        curYear:new Date().getFullYear(),
     }},
     mounted(){
         this.loadNewForm()

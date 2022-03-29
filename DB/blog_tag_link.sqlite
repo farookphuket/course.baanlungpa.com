@@ -35,3 +35,22 @@ INSERT INTO `blog_tag`(`blog_id`,`tag_id`) VALUES('2','2');
  * */
 INSERT INTO `blog_tag`(`blog_id`,`tag_id`) VALUES('3','3');
  
+
+
+/* ================= INSERT command for blog id 4 
+ * on 2022-02-25 21:10:34 pm
+ * */
+INSERT INTO `blog_tag`(`blog_id`,`tag_id`) VALUES('4','4');
+
+/* ================= INSERT command for blog id 4 
+ * on 2022-02-25 21:10:34 pm
+ * */
+INSERT INTO `blog_tag`(`blog_id`,`tag_id`) VALUES('4','5');
+
+
+
+
+/* ================= INSERT command for blog id 5 
+ * on 2022-02-25 21:10:34 pm
+ * */
+INSERT INTO `blog_tag`(`blog_id`,`tag_id`) VALUES('5','6');

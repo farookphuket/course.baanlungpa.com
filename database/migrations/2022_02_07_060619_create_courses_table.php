@@ -18,7 +18,6 @@ class CreateCoursesTable extends Migration
             $table->foreignId("user_id")->constrained()->onDelete("cascade");
             $table->string("course_year");
             $table->string("course_term");
-            $table->integer("course_id");
             $table->string("course_credit");
             $table->string("course_name");
             $table->string("course_cover")->nullable();

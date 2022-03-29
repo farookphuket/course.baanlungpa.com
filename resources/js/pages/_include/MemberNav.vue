@@ -57,6 +57,35 @@
             </div>
             <!-- end of teacher menu dropdown -->
 
+            <!-- dropdown menu copy code from :https://codepen.io/sakthig/pen/RvwVYM?editors=1100 
+                on 4 Mar 2022 -->
+            <div class="navbar-item has-dropdown is-hoverable" 
+                v-if="isStudent">
+                <a href="" class="navbar-link">
+                    Student
+                </a>
+                <div class="navbar-dropdown">
+                    <div class="nested navbar-item dropdown">
+                        <div class="dropdown-trigger">
+
+                            <router-link class="navbar-item" 
+                                         :to="{name:'ClassRoom'}">My class room</router-link>
+
+                            <router-link class="navbar-item" 
+                                         :to="{name:'CourseStudent'}">My Course</router-link>
+
+                            <router-link class="navbar-item" 
+                                         :to="{name:'StudentDashboard'}">student</router-link>
+
+                            <router-link class="navbar-item" 
+                                         :to="{name:'Teacher'}">teacher</router-link>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- end of Student menu dropdown -->
+
           <router-link :to="{name:'Profile'}" 
               class="navbar-item">Profile</router-link>
 
@@ -80,6 +109,7 @@ export default {
         lastScrollPosition: 0,
         user_must_verify:false,
         isTeacher:false,
+        isStudent:false,
     }
   },
   mounted() {
@@ -114,6 +144,7 @@ export default {
       },
       getTeacher(){
           this.isTeacher = window.lsDefault.user_is_teacher
+          this.isStudent = window.lsDefault.user_is_student
       },
 
   }

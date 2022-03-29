@@ -28,266 +28,1021 @@ INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
 
 
 
-
-
- 
-/* ========================== Backup visitor id 2 ==========================
- * on date 2022-02-24 18:53:10 pm
- * */
-INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
-`updated_at`) VALUES(
-    '127.0.0.1',
-    'Linux ',
-    'Chrome 97.0.4692.71',
-    'WebKit',
-    '2022-02-24 18:53:10',
-    '2022-02-24 18:53:10',
-    '2022-02-24 18:53:10');
-  
-/* ========================== Backup visitor id 3 ==========================
- * on date 2022-02-25 06:16:42 am
- * */
-INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
-`updated_at`) VALUES(
-    '127.0.0.1',
-    'Linux ',
-    'Chrome 97.0.4692.71',
-    'WebKit',
-    '2022-02-25 06:16:42',
-    '2022-02-25 06:16:42',
-    '2022-02-25 06:16:42');
   
 /* ========================== Backup visitor id 4 ==========================
- * on date 2022-02-26 05:40:48 am
+ * on date 2022-02-25 22:30:31 pm
  * */
 INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
 `updated_at`) VALUES(
-    '127.0.0.1',
+    '223.24.153.20',
     'Linux ',
     'Chrome 97.0.4692.71',
     'WebKit',
-    '2022-02-26 05:40:48',
-    '2022-02-26 05:40:48',
-    '2022-02-26 05:40:48');
+    '2022-02-25 22:30:31',
+    '2022-02-25 22:30:31',
+    '2022-02-25 22:30:31');
+  
+/* ========================== Backup visitor id 5 ==========================
+ * on date 2022-02-25 22:31:45 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '223.24.154.236',
+    'AndroidOS 10',
+    'Chrome 89.0.4389.116',
+    'Xiaomi',
+    '2022-02-25 22:31:45',
+    '2022-02-25 22:31:45',
+    '2022-02-25 22:31:45');
   
 /* ========================== Backup visitor id 6 ==========================
- * on date 2022-02-28 18:23:29 pm
+ * on date 2022-02-26 01:40:49 am
  * */
 INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
 `updated_at`) VALUES(
-    '127.0.0.1',
-    'Linux ',
-    'Chrome 97.0.4692.71',
-    'WebKit',
-    '2022-02-28 18:23:29',
-    '2022-02-28 18:23:29',
-    '2022-02-28 18:23:29');
+    '17.121.112.237',
+    'OS X 10_15_5',
+    'Safari 13.1.1',
+    'Macintosh',
+    '2022-02-26 01:40:49',
+    '2022-02-26 01:40:49',
+    '2022-02-26 01:40:49');
   
 /* ========================== Backup visitor id 7 ==========================
- * on date 2022-03-01 05:28:35 am
+ * on date 2022-02-26 05:02:57 am
  * */
 INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
 `updated_at`) VALUES(
-    '127.0.0.1',
-    'Linux ',
-    'Chrome 97.0.4692.71',
-    'WebKit',
-    '2022-03-01 05:28:35',
-    '2022-03-01 05:28:35',
-    '2022-03-01 05:28:35');
+    '66.249.79.58',
+    'AndroidOS 6.0.1',
+    'Chrome 98.0.4758.102',
+    'Nexus',
+    '2022-02-26 05:02:57',
+    '2022-02-26 05:02:57',
+    '2022-02-26 05:02:57');
   
 /* ========================== Backup visitor id 8 ==========================
- * on date 2022-03-02 04:13:12 am
+ * on date 2022-02-26 14:16:27 pm
  * */
 INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
 `updated_at`) VALUES(
-    '127.0.0.1',
-    'Linux ',
-    'Chrome 97.0.4692.71',
-    'WebKit',
-    '2022-03-02 04:13:12',
-    '2022-03-02 04:13:12',
-    '2022-03-02 04:13:12');
+    '66.249.79.225',
+    'AndroidOS 6.0.1',
+    'Chrome 98.0.4758.102',
+    'Nexus',
+    '2022-02-26 14:16:27',
+    '2022-02-26 14:16:27',
+    '2022-02-26 14:16:27');
   
 /* ========================== Backup visitor id 9 ==========================
- * on date 2022-03-03 05:21:59 am
+ * on date 2022-02-27 17:55:36 pm
  * */
 INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
 `updated_at`) VALUES(
-    '127.0.0.1',
-    'Linux ',
-    'Chrome 97.0.4692.71',
-    'WebKit',
-    '2022-03-03 05:21:59',
-    '2022-03-03 05:21:59',
-    '2022-03-03 05:21:59');
+    '17.121.112.193',
+    'OS X 10_15_5',
+    'Safari 13.1.1',
+    'Macintosh',
+    '2022-02-27 17:55:36',
+    '2022-02-27 17:55:36',
+    '2022-02-27 17:55:36');
   
 /* ========================== Backup visitor id 10 ==========================
- * on date 2022-03-04 05:39:47 am
+ * on date 2022-02-28 01:09:50 am
  * */
 INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
 `updated_at`) VALUES(
-    '127.0.0.1',
-    'Linux ',
-    'Chrome 97.0.4692.71',
+    '114.119.151.50',
+    'AndroidOS 7.0',
+    'Safari 537.36',
     'WebKit',
-    '2022-03-04 05:39:47',
-    '2022-03-04 05:39:47',
-    '2022-03-04 05:39:47');
+    '2022-02-28 01:09:50',
+    '2022-02-28 01:09:50',
+    '2022-02-28 01:09:50');
+  
+/* ========================== Backup visitor id 11 ==========================
+ * on date 2022-03-01 00:58:03 am
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.58',
+    'AndroidOS 6.0.1',
+    'Chrome 98.0.4758.102',
+    'Nexus',
+    '2022-03-01 00:58:03',
+    '2022-03-01 00:58:03',
+    '2022-03-01 00:58:03');
   
 /* ========================== Backup visitor id 12 ==========================
- * on date 2022-03-06 05:43:01 am
+ * on date 2022-03-01 02:03:03 am
  * */
 INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
 `updated_at`) VALUES(
-    '127.0.0.1',
-    'Linux ',
-    'Chrome 97.0.4692.71',
-    'WebKit',
-    '2022-03-06 05:43:01',
-    '2022-03-06 05:43:01',
-    '2022-03-06 05:43:01');
+    '66.249.79.225',
+    'AndroidOS 6.0.1',
+    'Chrome 98.0.4758.102',
+    'Nexus',
+    '2022-03-01 02:03:03',
+    '2022-03-01 02:03:03',
+    '2022-03-01 02:03:03');
   
-/* ========================== Backup visitor id 23 ==========================
- * on date 2022-03-06 09:06:49 am
+/* ========================== Backup visitor id 13 ==========================
+ * on date 2022-03-02 07:57:40 am
  * */
 INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
 `updated_at`) VALUES(
-    '127.0.0.1',
-    'Linux ',
-    'Chrome 97.0.4692.71',
-    'WebKit',
-    '2022-03-06 09:06:49',
-    '2022-03-06 09:06:49',
-    '2022-03-06 09:06:49');
+    '66.249.79.225',
+    ' ',
+    'Chrome 98.0.4758.102',
+    'Bot',
+    '2022-03-02 07:57:40',
+    '2022-03-02 07:57:40',
+    '2022-03-02 07:57:40');
   
-/* ========================== Backup visitor id 24 ==========================
- * on date 2022-03-07 06:09:50 am
+/* ========================== Backup visitor id 14 ==========================
+ * on date 2022-03-03 17:05:22 pm
  * */
 INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
 `updated_at`) VALUES(
-    '127.0.0.1',
-    'Linux ',
-    'Chrome 97.0.4692.71',
+    '40.77.189.92',
+    'Windows 6.1',
+    'Mozilla ',
     'WebKit',
-    '2022-03-07 06:09:50',
-    '2022-03-07 06:09:50',
-    '2022-03-07 06:09:50');
+    '2022-03-03 17:05:22',
+    '2022-03-03 17:05:22',
+    '2022-03-03 17:05:22');
   
-/* ========================== Backup visitor id 25 ==========================
- * on date 2022-03-08 01:40:50 am
+/* ========================== Backup visitor id 15 ==========================
+ * on date 2022-03-03 18:50:28 pm
  * */
 INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
 `updated_at`) VALUES(
-    '127.0.0.1',
+    '66.249.79.225',
+    ' ',
+    'Chrome 98.0.4758.102',
+    'Bot',
+    '2022-03-03 18:50:28',
+    '2022-03-03 18:50:28',
+    '2022-03-03 18:50:28');
+  
+/* ========================== Backup visitor id 16 ==========================
+ * on date 2022-03-04 07:11:00 am
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '223.24.187.59',
     'Linux ',
     'Chrome 97.0.4692.71',
     'WebKit',
-    '2022-03-08 01:40:50',
-    '2022-03-08 01:40:50',
-    '2022-03-08 01:40:50');
+    '2022-03-04 07:11:00',
+    '2022-03-04 07:11:00',
+    '2022-03-04 07:11:00');
+  
+/* ========================== Backup visitor id 17 ==========================
+ * on date 2022-03-04 10:31:08 am
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '114.119.156.142',
+    'AndroidOS 7.0',
+    'Safari 537.36',
+    'WebKit',
+    '2022-03-04 10:31:08',
+    '2022-03-04 10:31:08',
+    '2022-03-04 10:31:08');
+  
+/* ========================== Backup visitor id 18 ==========================
+ * on date 2022-03-04 14:34:19 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.225',
+    ' ',
+    'Chrome 98.0.4758.102',
+    'Bot',
+    '2022-03-04 14:34:19',
+    '2022-03-04 14:34:19',
+    '2022-03-04 14:34:19');
+  
+/* ========================== Backup visitor id 19 ==========================
+ * on date 2022-03-05 11:23:00 am
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.58',
+    ' ',
+    'Chrome 98.0.4758.102',
+    'Bot',
+    '2022-03-05 11:23:00',
+    '2022-03-05 11:23:00',
+    '2022-03-05 11:23:00');
+  
+/* ========================== Backup visitor id 20 ==========================
+ * on date 2022-03-05 13:11:32 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.227',
+    'AndroidOS 6.0.1',
+    'Chrome 98.0.4758.102',
+    'Nexus',
+    '2022-03-05 13:11:32',
+    '2022-03-05 13:11:32',
+    '2022-03-05 13:11:32');
   
 /* ========================== Backup visitor id 21 ==========================
- * on date 2022-03-08 20:50:09 pm
+ * on date 2022-03-05 22:26:59 pm
  * */
 INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
 `updated_at`) VALUES(
-    '127.0.0.1',
-    'Linux ',
-    'Chrome 97.0.4692.71',
-    'WebKit',
-    '2022-03-08 20:50:09',
-    '2022-03-08 20:50:09',
-    '2022-03-08 20:50:09');
+    '66.249.79.225',
+    'AndroidOS 6.0.1',
+    'Chrome 98.0.4758.102',
+    'Nexus',
+    '2022-03-05 22:26:59',
+    '2022-03-05 22:26:59',
+    '2022-03-05 22:26:59');
   
 /* ========================== Backup visitor id 22 ==========================
- * on date 2022-03-09 04:21:50 am
+ * on date 2022-03-06 08:48:08 am
  * */
 INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
 `updated_at`) VALUES(
-    '127.0.0.1',
+    '49.237.9.99',
     'Linux ',
     'Chrome 97.0.4692.71',
     'WebKit',
-    '2022-03-09 04:21:50',
-    '2022-03-09 04:21:50',
-    '2022-03-09 04:21:50');
+    '2022-03-06 08:48:08',
+    '2022-03-06 08:48:08',
+    '2022-03-06 08:48:08');
+ 
+ 
+ 
+/* ========================== Backup visitor id 21 ==========================
+ * on date 2022-03-11 18:43:52 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '223.24.149.71',
+    'Linux ',
+    'Chrome 97.0.4692.71',
+    'WebKit',
+    '2022-03-11 18:43:52',
+    '2022-03-11 18:43:52',
+    '2022-03-11 18:43:52');
+  
+/* ========================== Backup visitor id 22 ==========================
+ * on date 2022-03-12 02:49:02 am
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '17.121.113.181',
+    'OS X 10_15_5',
+    'Safari 13.1.1',
+    'Macintosh',
+    '2022-03-12 02:49:02',
+    '2022-03-12 02:49:02',
+    '2022-03-12 02:49:02');
   
 /* ========================== Backup visitor id 23 ==========================
- * on date 2022-03-10 07:09:24 am
+ * on date 2022-03-12 05:00:53 am
  * */
 INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
 `updated_at`) VALUES(
-    '127.0.0.1',
+    '27.55.80.133',
     'Linux ',
     'Chrome 97.0.4692.71',
     'WebKit',
-    '2022-03-10 07:09:24',
-    '2022-03-10 07:09:24',
-    '2022-03-10 07:09:24');
-  
-/* ========================== Backup visitor id 1 ==========================
- * on date 2022-03-10 21:18:39 pm
- * */
-INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
-`updated_at`) VALUES(
-    '127.0.0.1',
-    'Linux ',
-    'Chrome 97.0.4692.71',
-    'WebKit',
-    '2022-03-10 21:18:39',
-    '2022-03-10 21:18:39',
-    '2022-03-10 21:18:39');
+    '2022-03-12 05:00:53',
+    '2022-03-12 05:00:53',
+    '2022-03-12 05:00:53');
   
 /* ========================== Backup visitor id 24 ==========================
- * on date 2022-03-14 14:12:10 pm
+ * on date 2022-03-13 07:38:45 am
  * */
 INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
 `updated_at`) VALUES(
-    '127.0.0.1',
+    '49.237.10.55',
     'Linux ',
     'Chrome 97.0.4692.71',
     'WebKit',
-    '2022-03-14 14:12:10',
-    '2022-03-14 14:12:10',
-    '2022-03-14 14:12:10');
+    '2022-03-13 07:38:45',
+    '2022-03-13 07:38:45',
+    '2022-03-13 07:38:45');
   
-/* ========================== Backup visitor id 23 ==========================
- * on date 2022-03-15 05:41:34 am
+/* ========================== Backup visitor id 25 ==========================
+ * on date 2022-03-13 10:54:35 am
  * */
 INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
 `updated_at`) VALUES(
-    '127.0.0.1',
+    '223.24.162.238',
     'Linux ',
     'Chrome 97.0.4692.71',
     'WebKit',
-    '2022-03-15 05:41:34',
-    '2022-03-15 05:41:34',
-    '2022-03-15 05:41:34');
+    '2022-03-13 10:54:35',
+    '2022-03-13 10:54:35',
+    '2022-03-13 10:54:35');
   
-/* ========================== Backup visitor id 23 ==========================
- * on date 2022-03-15 19:42:51 pm
+/* ========================== Backup visitor id 26 ==========================
+ * on date 2022-03-13 11:59:25 am
  * */
 INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
 `updated_at`) VALUES(
-    '127.0.0.1',
-    'Linux ',
-    'Chrome 97.0.4692.71',
+    '114.119.152.139',
+    'AndroidOS 7.0',
+    'Safari 537.36',
     'WebKit',
-    '2022-03-15 19:42:51',
-    '2022-03-15 19:42:51',
-    '2022-03-15 19:42:51');
+    '2022-03-13 11:59:25',
+    '2022-03-13 11:59:25',
+    '2022-03-13 11:59:25');
   
-/* ========================== Backup visitor id 21 ==========================
- * on date 2022-03-16 03:58:28 am
+/* ========================== Backup visitor id 27 ==========================
+ * on date 2022-03-13 13:08:34 pm
  * */
 INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
 `updated_at`) VALUES(
-    '127.0.0.1',
+    '49.237.15.19',
+    'iOS 15_3',
+    'Safari 604.1',
+    'iPhone',
+    '2022-03-13 13:08:34',
+    '2022-03-13 13:08:34',
+    '2022-03-13 13:08:34');
+  
+/* ========================== Backup visitor id 28 ==========================
+ * on date 2022-03-13 15:24:07 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '27.55.76.249',
     'Linux ',
     'Chrome 97.0.4692.71',
     'WebKit',
-    '2022-03-16 03:58:28',
-    '2022-03-16 03:58:28',
-    '2022-03-16 03:58:28');
+    '2022-03-13 15:24:07',
+    '2022-03-13 15:24:07',
+    '2022-03-13 15:24:07');
+  
+/* ========================== Backup visitor id 29 ==========================
+ * on date 2022-03-13 17:40:42 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '223.24.165.218',
+    'Linux ',
+    'Chrome 97.0.4692.71',
+    'WebKit',
+    '2022-03-13 17:40:42',
+    '2022-03-13 17:40:42',
+    '2022-03-13 17:40:42');
+  
+/* ========================== Backup visitor id 30 ==========================
+ * on date 2022-03-13 18:58:21 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '27.55.89.244',
+    'Linux ',
+    'Chrome 97.0.4692.71',
+    'WebKit',
+    '2022-03-13 18:58:21',
+    '2022-03-13 18:58:21',
+    '2022-03-13 18:58:21');
+  
+/* ========================== Backup visitor id 31 ==========================
+ * on date 2022-03-13 21:58:14 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '17.121.113.251',
+    'OS X 10_15_5',
+    'Safari 13.1.1',
+    'Macintosh',
+    '2022-03-13 21:58:14',
+    '2022-03-13 21:58:14',
+    '2022-03-13 21:58:14');
+  
+/* ========================== Backup visitor id 32 ==========================
+ * on date 2022-03-13 23:27:21 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '65.154.226.171',
+    'Windows 10.0',
+    'Chrome 76.0.3809.71',
+    'WebKit',
+    '2022-03-13 23:27:21',
+    '2022-03-13 23:27:21',
+    '2022-03-13 23:27:21');
+  
+/* ========================== Backup visitor id 33 ==========================
+ * on date 2022-03-14 08:15:27 am
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '223.24.94.165',
+    'Linux ',
+    'Chrome 97.0.4692.71',
+    'WebKit',
+    '2022-03-14 08:15:27',
+    '2022-03-14 08:15:27',
+    '2022-03-14 08:15:27');
+  
+/* ========================== Backup visitor id 34 ==========================
+ * on date 2022-03-14 11:59:50 am
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '65.154.226.168',
+    'Windows 10.0',
+    'Chrome 76.0.3809.71',
+    'WebKit',
+    '2022-03-14 11:59:49',
+    '2022-03-14 11:59:49',
+    '2022-03-14 11:59:49');
+  
+/* ========================== Backup visitor id 35 ==========================
+ * on date 2022-03-14 12:51:09 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.118',
+    ' ',
+    'Chrome 98.0.4758.102',
+    'Bot',
+    '2022-03-14 12:51:08',
+    '2022-03-14 12:51:08',
+    '2022-03-14 12:51:08');
+  
+/* ========================== Backup visitor id 36 ==========================
+ * on date 2022-03-14 14:08:43 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '27.55.79.106',
+    'Linux ',
+    'Chrome 97.0.4692.71',
+    'WebKit',
+    '2022-03-14 14:08:43',
+    '2022-03-14 14:08:43',
+    '2022-03-14 14:08:43');
+  
+/* ========================== Backup visitor id 37 ==========================
+ * on date 2022-03-14 14:21:29 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.149',
+    'AndroidOS 6.0.1',
+    'Chrome 98.0.4758.102',
+    'Nexus',
+    '2022-03-14 14:21:29',
+    '2022-03-14 14:21:29',
+    '2022-03-14 14:21:29');
+  
+/* ========================== Backup visitor id 38 ==========================
+ * on date 2022-03-14 16:34:13 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '61.90.31.83',
+    'iOS 15_3_1',
+    'Safari ',
+    'iPhone',
+    '2022-03-14 16:34:13',
+    '2022-03-14 16:34:13',
+    '2022-03-14 16:34:13');
+  
+/* ========================== Backup visitor id 39 ==========================
+ * on date 2022-03-14 17:39:21 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '223.24.94.248',
+    'Linux ',
+    'Chrome 97.0.4692.71',
+    'WebKit',
+    '2022-03-14 17:39:21',
+    '2022-03-14 17:39:21',
+    '2022-03-14 17:39:21');
+  
+/* ========================== Backup visitor id 40 ==========================
+ * on date 2022-03-14 23:11:21 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.98',
+    'AndroidOS 6.0.1',
+    'Chrome 98.0.4758.102',
+    'Nexus',
+    '2022-03-14 23:11:21',
+    '2022-03-14 23:11:21',
+    '2022-03-14 23:11:21');
+  
+/* ========================== Backup visitor id 41 ==========================
+ * on date 2022-03-15 12:02:54 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.68.79',
+    'AndroidOS 6.0.1',
+    'Chrome 98.0.4758.102',
+    'Nexus',
+    '2022-03-15 12:02:54',
+    '2022-03-15 12:02:54',
+    '2022-03-15 12:02:54');
+  
+/* ========================== Backup visitor id 42 ==========================
+ * on date 2022-03-16 12:07:14 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '40.77.188.44',
+    'Windows 6.1',
+    'Mozilla ',
+    'WebKit',
+    '2022-03-16 12:07:14',
+    '2022-03-16 12:07:14',
+    '2022-03-16 12:07:14');
+  
+/* ========================== Backup visitor id 43 ==========================
+ * on date 2022-03-16 20:44:32 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.118',
+    'AndroidOS 6.0.1',
+    'Chrome 98.0.4758.102',
+    'Nexus',
+    '2022-03-16 20:44:32',
+    '2022-03-16 20:44:32',
+    '2022-03-16 20:44:32');
+  
+/* ========================== Backup visitor id 44 ==========================
+ * on date 2022-03-17 05:23:22 am
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '223.24.169.108',
+    'Linux ',
+    'Chrome 99.0.4844.51',
+    'WebKit',
+    '2022-03-17 05:23:22',
+    '2022-03-17 05:23:22',
+    '2022-03-17 05:23:22');
+  
+/* ========================== Backup visitor id 45 ==========================
+ * on date 2022-03-17 05:50:38 am
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.151',
+    'AndroidOS 6.0.1',
+    'Chrome 98.0.4758.102',
+    'Nexus',
+    '2022-03-17 05:50:38',
+    '2022-03-17 05:50:38',
+    '2022-03-17 05:50:38');
+  
+/* ========================== Backup visitor id 46 ==========================
+ * on date 2022-03-17 21:31:08 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.116',
+    'AndroidOS 6.0.1',
+    'Chrome 98.0.4758.102',
+    'Nexus',
+    '2022-03-17 21:31:08',
+    '2022-03-17 21:31:08',
+    '2022-03-17 21:31:08');
+  
+/* ========================== Backup visitor id 47 ==========================
+ * on date 2022-03-18 08:49:55 am
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '49.237.8.156',
+    'Linux ',
+    'Chrome 97.0.4692.71',
+    'WebKit',
+    '2022-03-18 08:49:55',
+    '2022-03-18 08:49:55',
+    '2022-03-18 08:49:55');
+  
+/* ========================== Backup visitor id 48 ==========================
+ * on date 2022-03-18 21:52:55 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '114.119.159.152',
+    'AndroidOS 7.0',
+    'Safari 537.36',
+    'WebKit',
+    '2022-03-18 21:52:55',
+    '2022-03-18 21:52:55',
+    '2022-03-18 21:52:55');
+  
+/* ========================== Backup visitor id 49 ==========================
+ * on date 2022-03-19 07:45:32 am
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.149',
+    ' ',
+    'Chrome 98.0.4758.102',
+    'Bot',
+    '2022-03-19 07:45:32',
+    '2022-03-19 07:45:32',
+    '2022-03-19 07:45:32');
+  
+/* ========================== Backup visitor id 50 ==========================
+ * on date 2022-03-19 22:21:11 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.116',
+    'AndroidOS 6.0.1',
+    'Chrome 98.0.4758.102',
+    'Nexus',
+    '2022-03-19 22:21:11',
+    '2022-03-19 22:21:11',
+    '2022-03-19 22:21:11');
+  
+/* ========================== Backup visitor id 51 ==========================
+ * on date 2022-03-20 09:20:03 am
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.153',
+    'AndroidOS 6.0.1',
+    'Chrome 98.0.4758.102',
+    'Nexus',
+    '2022-03-20 09:20:03',
+    '2022-03-20 09:20:03',
+    '2022-03-20 09:20:03');
+  
+/* ========================== Backup visitor id 52 ==========================
+ * on date 2022-03-20 12:51:06 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.116',
+    ' ',
+    'Chrome 98.0.4758.102',
+    'Bot',
+    '2022-03-20 12:51:06',
+    '2022-03-20 12:51:06',
+    '2022-03-20 12:51:06');
+  
+/* ========================== Backup visitor id 53 ==========================
+ * on date 2022-03-20 13:34:45 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '17.121.114.18',
+    'OS X 10_15_5',
+    'Safari 13.1.1',
+    'Macintosh',
+    '2022-03-20 13:34:45',
+    '2022-03-20 13:34:45',
+    '2022-03-20 13:34:45');
+  
+/* ========================== Backup visitor id 54 ==========================
+ * on date 2022-03-20 14:57:35 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '17.121.113.171',
+    'OS X 10_15_5',
+    'Safari 13.1.1',
+    'Macintosh',
+    '2022-03-20 14:57:34',
+    '2022-03-20 14:57:34',
+    '2022-03-20 14:57:34');
+  
+/* ========================== Backup visitor id 55 ==========================
+ * on date 2022-03-20 16:27:13 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '17.121.114.246',
+    'OS X 10_15_5',
+    'Safari 13.1.1',
+    'Macintosh',
+    '2022-03-20 16:27:13',
+    '2022-03-20 16:27:13',
+    '2022-03-20 16:27:13');
+  
+/* ========================== Backup visitor id 56 ==========================
+ * on date 2022-03-20 16:40:57 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '17.121.114.229',
+    'OS X 10_15_5',
+    'Safari 13.1.1',
+    'Macintosh',
+    '2022-03-20 16:40:57',
+    '2022-03-20 16:40:57',
+    '2022-03-20 16:40:57');
+  
+/* ========================== Backup visitor id 57 ==========================
+ * on date 2022-03-20 18:10:27 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '17.121.115.67',
+    'OS X 10_15_5',
+    'Safari 13.1.1',
+    'Macintosh',
+    '2022-03-20 18:10:27',
+    '2022-03-20 18:10:27',
+    '2022-03-20 18:10:27');
+  
+/* ========================== Backup visitor id 59 ==========================
+ * on date 2022-03-21 08:18:54 am
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '40.77.188.91',
+    'Windows 6.1',
+    'Mozilla ',
+    'WebKit',
+    '2022-03-21 08:18:54',
+    '2022-03-21 08:18:54',
+    '2022-03-21 08:18:54');
+  
+/* ========================== Backup visitor id 61 ==========================
+ * on date 2022-03-22 20:57:53 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.151',
+    ' ',
+    'Chrome 98.0.4758.102',
+    'Bot',
+    '2022-03-22 20:57:53',
+    '2022-03-22 20:57:53',
+    '2022-03-22 20:57:53');
+  
+/* ========================== Backup visitor id 62 ==========================
+ * on date 2022-03-23 06:21:17 am
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.118',
+    'AndroidOS 6.0.1',
+    'Chrome 98.0.4758.102',
+    'Nexus',
+    '2022-03-23 06:21:17',
+    '2022-03-23 06:21:17',
+    '2022-03-23 06:21:17');
+  
+/* ========================== Backup visitor id 63 ==========================
+ * on date 2022-03-24 11:02:59 am
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '223.24.168.111',
+    'Linux ',
+    'Chrome 97.0.4692.71',
+    'WebKit',
+    '2022-03-24 11:02:58',
+    '2022-03-24 11:02:58',
+    '2022-03-24 11:02:58');
+  
+/* ========================== Backup visitor id 64 ==========================
+ * on date 2022-03-24 13:30:30 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.118',
+    'AndroidOS 6.0.1',
+    'Chrome 98.0.4758.102',
+    'Nexus',
+    '2022-03-24 13:30:30',
+    '2022-03-24 13:30:30',
+    '2022-03-24 13:30:30');
+  
+/* ========================== Backup visitor id 65 ==========================
+ * on date 2022-03-24 14:53:55 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.149',
+    'AndroidOS 6.0.1',
+    'Chrome 98.0.4758.102',
+    'Nexus',
+    '2022-03-24 14:53:55',
+    '2022-03-24 14:53:55',
+    '2022-03-24 14:53:55');
+  
+/* ========================== Backup visitor id 66 ==========================
+ * on date 2022-03-24 16:00:06 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.151',
+    'AndroidOS 6.0.1',
+    'Chrome 98.0.4758.102',
+    'Nexus',
+    '2022-03-24 16:00:06',
+    '2022-03-24 16:00:06',
+    '2022-03-24 16:00:06');
+  
+/* ========================== Backup visitor id 67 ==========================
+ * on date 2022-03-24 16:03:40 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '17.121.114.227',
+    'OS X 10_15_5',
+    'Safari 13.1.1',
+    'Macintosh',
+    '2022-03-24 16:03:40',
+    '2022-03-24 16:03:40',
+    '2022-03-24 16:03:40');
+  
+/* ========================== Backup visitor id 68 ==========================
+ * on date 2022-03-24 20:28:01 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.116',
+    'AndroidOS 6.0.1',
+    'Chrome 98.0.4758.102',
+    'Nexus',
+    '2022-03-24 20:28:01',
+    '2022-03-24 20:28:01',
+    '2022-03-24 20:28:01');
+  
+/* ========================== Backup visitor id 69 ==========================
+ * on date 2022-03-25 04:17:19 am
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '114.119.159.92',
+    'AndroidOS 7.0',
+    'Safari 537.36',
+    'WebKit',
+    '2022-03-25 04:17:19',
+    '2022-03-25 04:17:19',
+    '2022-03-25 04:17:19');
+  
+/* ========================== Backup visitor id 70 ==========================
+ * on date 2022-03-25 05:35:33 am
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '223.24.158.68',
+    'Linux ',
+    'Chrome 97.0.4692.71',
+    'WebKit',
+    '2022-03-25 05:35:33',
+    '2022-03-25 05:35:33',
+    '2022-03-25 05:35:33');
+  
+/* ========================== Backup visitor id 71 ==========================
+ * on date 2022-03-25 11:51:22 am
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.116',
+    'AndroidOS 6.0.1',
+    'Chrome 98.0.4758.102',
+    'Nexus',
+    '2022-03-25 11:51:22',
+    '2022-03-25 11:51:22',
+    '2022-03-25 11:51:22');
+  
+/* ========================== Backup visitor id 72 ==========================
+ * on date 2022-03-25 23:23:38 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.149',
+    ' ',
+    'Chrome 98.0.4758.102',
+    'Bot',
+    '2022-03-25 23:23:38',
+    '2022-03-25 23:23:38',
+    '2022-03-25 23:23:38');
+  
+/* ========================== Backup visitor id 73 ==========================
+ * on date 2022-03-26 00:46:33 am
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '17.121.113.131',
+    'OS X 10_15_5',
+    'Safari 13.1.1',
+    'Macintosh',
+    '2022-03-26 00:46:33',
+    '2022-03-26 00:46:33',
+    '2022-03-26 00:46:33');
+  
+/* ========================== Backup visitor id 74 ==========================
+ * on date 2022-03-26 01:55:58 am
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '17.121.113.188',
+    'OS X 10_15_5',
+    'Safari 13.1.1',
+    'Macintosh',
+    '2022-03-26 01:55:58',
+    '2022-03-26 01:55:58',
+    '2022-03-26 01:55:58');
+  
+/* ========================== Backup visitor id 75 ==========================
+ * on date 2022-03-27 15:03:20 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.116',
+    'AndroidOS 6.0.1',
+    'Chrome 98.0.4758.102',
+    'Nexus',
+    '2022-03-27 15:03:20',
+    '2022-03-27 15:03:20',
+    '2022-03-27 15:03:20');
+  
+/* ========================== Backup visitor id 76 ==========================
+ * on date 2022-03-27 16:46:11 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '40.77.190.73',
+    'Windows 6.1',
+    'Mozilla ',
+    'WebKit',
+    '2022-03-27 16:46:11',
+    '2022-03-27 16:46:11',
+    '2022-03-27 16:46:11');
+  
+/* ========================== Backup visitor id 77 ==========================
+ * on date 2022-03-28 09:07:57 am
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '223.24.153.88',
+    'Linux ',
+    'Chrome 97.0.4692.71',
+    'WebKit',
+    '2022-03-28 09:07:57',
+    '2022-03-28 09:07:57',
+    '2022-03-28 09:07:57');
+  
+/* ========================== Backup visitor id 82 ==========================
+ * on date 2022-03-29 08:50:25 am
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '49.237.9.210',
+    'Linux ',
+    'Chrome 99.0.4844.82',
+    'WebKit',
+    '2022-03-29 08:50:25',
+    '2022-03-29 08:50:25',
+    '2022-03-29 08:50:25');
+  
+/* ========================== Backup visitor id 83 ==========================
+ * on date 2022-03-29 08:53:20 am
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.118',
+    'AndroidOS 6.0.1',
+    'Chrome 99.0.4844.74',
+    'Nexus',
+    '2022-03-29 08:53:20',
+    '2022-03-29 08:53:20',
+    '2022-03-29 08:53:20');
+  
+/* ========================== Backup visitor id 84 ==========================
+ * on date 2022-03-29 08:53:24 am
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '66.249.79.116',
+    ' ',
+    'Chrome 99.0.4844.74',
+    'Bot',
+    '2022-03-29 08:53:24',
+    '2022-03-29 08:53:24',
+    '2022-03-29 08:53:24');
+  
+/* ========================== Backup visitor id 85 ==========================
+ * on date 2022-03-29 17:29:01 pm
+ * */
+INSERT INTO `visitors`(`ip`,`os`,`browser`,`device`,`visited_at`,`created_at`,
+`updated_at`) VALUES(
+    '223.24.165.228',
+    'AndroidOS 10',
+    'Chrome 99.0.4844.73',
+    'WebKit',
+    '2022-03-29 17:29:01',
+    '2022-03-29 17:29:01',
+    '2022-03-29 17:29:01');
  
+

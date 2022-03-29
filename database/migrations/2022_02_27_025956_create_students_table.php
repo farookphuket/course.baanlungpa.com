@@ -24,6 +24,15 @@ class CreateStudentsTable extends Migration
             $table->timestamp("successed_at")->nullable();
             $table->timestamps();
         });
+
+
+        Schema::create('class_room_student', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId("class_room_id")->constrained()
+                    ->onDelete("cascade");
+            $table->foreignId("student_id")->constrained()
+                    ->onDelete("cascade");
+        });
     }
 
     /**
@@ -34,5 +43,6 @@ class CreateStudentsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('students');
+        Schema::dropIfExists('class_room_student');
     }
 }

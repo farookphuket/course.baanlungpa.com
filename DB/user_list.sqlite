@@ -56,6 +56,55 @@ INSERT INTO `users`(`name`,`email`,`password`,`email_verified_at`,`is_admin`,
     '2007-10-29 02:36:17');
 
 
+INSERT INTO `users`(`name`,`email`,`password`,`email_verified_at`,`is_admin`,
+`created_at`,`updated_at`)VALUES(
+    'meen',
+    'meen@me.me',
+    '$2y$10$iKi.yWrpeYupRyyC0IpcZeSevb0w7sDXFr6eEN0NFlNnvI3tml4A2',
+    '2009-10-29 02:36:17',
+    '0',
+    '2007-10-29 02:30:29',
+    '2007-10-29 02:36:17');
+
+INSERT INTO `users`(`name`,`email`,`password`,`email_verified_at`,`is_admin`,
+`created_at`,`updated_at`)VALUES(
+    'mood',
+    'mood@me.me',
+    '$2y$10$iKi.yWrpeYupRyyC0IpcZeSevb0w7sDXFr6eEN0NFlNnvI3tml4A2',
+    '2009-10-29 02:36:17',
+    '0',
+    '2007-10-29 02:30:29',
+    '2007-10-29 02:36:17');
+
+INSERT INTO `users`(`name`,`email`,`password`,`email_verified_at`,`is_admin`,
+`created_at`,`updated_at`)VALUES(
+    'padi',
+    'padi@me.me',
+    '$2y$10$iKi.yWrpeYupRyyC0IpcZeSevb0w7sDXFr6eEN0NFlNnvI3tml4A2',
+    '2009-10-29 02:36:17',
+    '0',
+    '2007-10-29 02:30:29',
+    '2007-10-29 02:36:17');
+
+INSERT INTO `users`(`name`,`email`,`password`,`email_verified_at`,`is_admin`,
+`created_at`,`updated_at`)VALUES(
+    'prix',
+    'prix@me.me',
+    '$2y$10$iKi.yWrpeYupRyyC0IpcZeSevb0w7sDXFr6eEN0NFlNnvI3tml4A2',
+    '2009-10-29 02:36:17',
+    '0',
+    '2007-10-29 02:30:29',
+    '2007-10-29 02:36:17');
+
+INSERT INTO `users`(`name`,`email`,`password`,`email_verified_at`,`is_admin`,
+`created_at`,`updated_at`)VALUES(
+    'pim',
+    'pim@me.me',
+    '$2y$10$iKi.yWrpeYupRyyC0IpcZeSevb0w7sDXFr6eEN0NFlNnvI3tml4A2',
+    '2009-10-29 02:36:17',
+    '0',
+    '2007-10-29 02:30:29',
+    '2007-10-29 02:36:17');
 
 
 /* ============================================================================

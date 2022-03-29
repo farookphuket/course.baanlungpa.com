@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\ClassRoom;
+use App\Models\User;
+use App\Models\Student;
+
 use Illuminate\Http\Request;
 
 use Auth;
@@ -22,8 +25,15 @@ class ClassRoomController extends Controller
         $classroom = ClassRoom::latest()
                         ->paginate($perpage);
 
+        $student = User::whereHas("role",fn($q) => 
+                                $q->where("role_name","student")
+                            )
+                            ->latest()
+                            ->paginate($perpage);
+
         return response()->json([
-            "classroom" => $classroom
+            "classroom" => $classroom,
+            "student" => $student
         ]);
     }
 
@@ -77,9 +87,18 @@ Success new classroom has been created!</span>
      * @param  \App\Models\ClassRoom  $classRoom
      * @return \Illuminate\Http\Response
      */
-    public function show(ClassRoom $classRoom)
+    public function show(ClassRoom $classroom)
     {
-        //
+        $c_room = ClassRoom::find($classroom->id);
+
+        $student = Student::with("classroom")
+                            ->latest()
+                            ->paginate(4);
+
+        return response()->json([
+            "classroom" => $c_room,
+            "student" => $student
+        ]);
     }
 
     /**

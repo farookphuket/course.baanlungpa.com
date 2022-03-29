@@ -19,8 +19,8 @@
           <router-link to="http://blp.proj" class="navbar-item">Home</router-link>
             -->
             <span>
-                <a href="http://blp.proj" 
-                    class="navbar-item is-uppercase">home</a>
+                <a href="https://baanlungpa.com" 
+                    class="navbar-item ">Home</a>
             </span>
 
           <router-link :to="{name:'PubCourse'}" 

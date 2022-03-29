@@ -69,17 +69,7 @@
                     </div><!-- end of div.column 2 -->
 
                     <div class="column">
-                        <div class="field">
-                            <label class="label" for="">
-                                Course ID :
-                            </label>
-                            <div class="control">
-                                <input v-model="cForm.course_id" 
-                                class="input" type="number" 
-                                ref="course_id" 
-                                placeholder="Auto">
-                            </div>
-                        </div>
+
 
                         <div class="field">
                             <label class="label" for="">
@@ -108,7 +98,9 @@
                                 if you have check this box the course will be 
                                 show to everyone as it a free course.
                             </p>
-
+                            <p class="mt-2 mb-4">
+                                ถ้าไม่ติ๊กเลือกช่องนี้ หมายถึง วิชานี้ต้องจ่ายเงิน
+                            </p>
                             <div class="field">
                                 <div class="control">
                                     <label class="checkbox" for="">
@@ -130,6 +122,9 @@
 
                     <div class="column">
                         <div class="box">
+                            <p class="title">
+                                Public this course?
+                            </p>
                             <p class="mb-4">
                                 Do you want this to be public? 
                                 your student will not be seeing this course 
@@ -146,11 +141,14 @@
                                         type="checkbox" name="">
                                         <span class="ml-2 has-text-weight-bold 
                                         has-text-success" 
-                                            v-if="cForm.course_is_public !== false">
-                                            is public</span>
-                                        <span class="ml-2 has-text-warning 
+                                            v-if="cForm.course_is_public === true">
+                                            Yes, 
+                                            I will make this course Public
+                                            </span>
+                                        <span class="ml-2 has-text-danger 
                                               is-uppercase" 
-                                            v-else>is NOT public</span>
+                                            v-else>No, 
+                                            this course is Private</span>
                                     </label>
                                 </div>
                             </div>
@@ -168,7 +166,7 @@
                     </label>
                     <div class="control">
                         <input v-model="cForm.course_name" class="input" 
-                        type="text" name="" 
+                        type="text" ref="course_name" 
                         placeholder="Enter course title">
                     </div>
                 </div>
@@ -211,7 +209,7 @@
                         </div>
                         <div class="column">
                             <p class="mb-2">
-                                paste the image url then hit enter
+                                paste the image url (press eye icon to preview)
                             </p>
                             <div class="field has-addons">
 
@@ -232,6 +230,7 @@
                                         @click.prevent="showUrlImagePreview">
                                         <font-awesome-icon 
                                             icon="eye"></font-awesome-icon>
+
                                     </a>
                                 </div>
                             </div>
@@ -248,24 +247,22 @@
                             <p>{{preview_text}}</p>
 
                             <p v-if="upload_file_is_too_big === true">
+                                <p class="title has-text-danger">
+                                    Error! the file is too large
+                                </p>
                                 <span class="has-text-danger 
                                     has-text-weight-bold">
-
+                                     
                                     {{upload_cover.size}} MB.
                                 </span> 
                                 <span class="has-text-danger">
-                                    Error! your file is too big! 
+                                     your file is too big! 
                                     please make sure your file is not bigger 
                                     than 2 MB. in size.
                                 </span>
 
                             </p>
-                            <p v-else>
-                                <span class="has-text-info 
-                                    has-text-weight-bold">
-                                    {{upload_cover.size}} MB.
-                                </span>
-                            </p>
+
                         </div>
 
                     </div>
@@ -305,7 +302,8 @@
                         <div class="mb-6 pb-4">
                             <div class="field is-pulled-right">
                                 <button class="button is-primary is-rounded 
-                                    is-outlined">
+                                    is-outlined" 
+                                    @click.prevent="copyMe">
                                     <font-awesome-icon 
                                         icon="copy"></font-awesome-icon>
                                 </button>
@@ -314,7 +312,7 @@
                         <div class="field">
                             <div class="control">
                                 <textarea v-model="cForm.course_body" 
-                                    class="textarea" name="" 
+                                    class="textarea" ref="course_body" 
                                     ></textarea>
                             </div>
                         </div>
@@ -350,7 +348,7 @@
 export default{
     name:"CourseForm",
 
-    props:["editId","classrooms","isNoClassRoom","autoCourse_id"],
+    props:["editId","classrooms","isNoClassRoom"],
     data(){
         return{
             cForm:new Form({
@@ -359,14 +357,13 @@ export default{
                 course_cover_file:'',
                 course_cover_url:'',
                 course_term:'',
-                course_id:'',
                 course_credit:'',
                 course_name:'',
                 course_excerpt:'',
                 course_body:'',
                 course_hours:'',
                 course_is_free:'',
-                course_is_public:false
+                course_is_public:''
             }),
             res_status:'',
             cur_year:new Date().getFullYear()+543,
@@ -389,36 +386,75 @@ export default{
     watch:{
         "editId":function(x){
             this.getEditData(x)
-        },
-        "autoCourse_id":function(x){
-            this.getAutoCourseId(x)
         }
     },
     mounted(){
-
         this.getFormStart()
-
 
     },
     methods:{
         getEditData(x){
-            alert(this.editId)
-        },
-        getAutoCourseId(x){
-            this.cForm.course_id = x
-        },
-        getFormStart(){
+            if(x && x !== 0){
+                let url = `/api/teacher/course/${x}`
+                axios.get(url)
+                    .then(res=>{
+                        let rData = res.data.course
+                        let cRoom = ""
 
+                        rData.map((cl)=>{
+                            //console.log(cl.classroom)
+                            this.preview_image = cl.course_cover
+                            this.preview_text = cl.course_name
+
+                            // term
+                            this.cForm.course_term = cl.course_term
+
+                            // corse credit 
+                            this.cForm.course_credit = cl.course_credit
+
+                            // year 
+                            this.cForm.course_year = cl.course_year
+
+
+                            // course hours 
+                            this.cForm.course_hours = cl.course_hours
+
+                            // free course 
+                            if(cl.course_is_free !== 0){
+                                this.cForm.course_is_free = true
+                            }
+
+                            // public course 
+                            if(cl.course_is_public !== 0){
+                                this.cForm.course_is_public = true
+                            }
+
+                            // course name,excerpt,body
+                            this.cForm.course_name = cl.course_name
+                            this.cForm.course_excerpt = cl.course_excerpt
+                            this.cForm.course_body = cl.course_body
+
+                            // class room
+                            cl.classroom.map((c)=>{
+                                //console.log(c.class_title)
+                                this.cForm.classroom = c.id
+                            })
+                        })
+                        setTimeout(()=>{
+                            this.$refs.course_name.focus()
+                        },800)
+                    })
+            }
+        },
+
+        getFormStart(){
+            this.cForm.reset()
             this.cForm.course_year = this.cur_year-1
 
         },
         saveCourse(id){
             let url = '/api/teacher/course'
-            let c_id = this.autoCourse_id
-            if(this.cForm.course_id === 0 
-                || this.cForm.course_id === ''){
-                this.cForm.course_id = c_id
-                 }
+
             let fData = new FormData()
             fData.append('classroom',this.cForm.classroom)
             fData.append('course_name',this.cForm.course_name)
@@ -434,7 +470,6 @@ export default{
             fData.append('course_body',this.cForm.course_body)
             fData.append('course_year',this.cForm.course_year)
             fData.append('course_term',this.cForm.course_term)
-            fData.append('course_id',this.cForm.course_id)
             fData.append('course_credit',this.cForm.course_credit)
             fData.append('course_hours',this.cForm.course_hours)
             fData.append('course_is_free',this.cForm.course_is_free)
@@ -447,6 +482,11 @@ export default{
             axios.post(url,fData)
                 .then(res=>{
                     this.res_status = res.data.msg
+                    setTimeout(()=>{
+                        this.res_status = ''
+                        this.$emit('getCourse')
+                        this.getFormStart()
+                    },2000)
                 })
                 .catch(err=>{
                     this.res_status = `
@@ -509,6 +549,10 @@ select new upload file
             }
 
             //console.log(theUrl)
+        },
+        copyMe(){
+            this.$refs.course_body.select()
+            document.execCommand('copy')
         },
     },
 }

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Teacher;
+use App\Models\User;
+use App\Models\ClassRoom;
 use App\Models\Student;
 
 use Illuminate\Http\Request;
@@ -19,20 +21,28 @@ class StudentController extends Controller
      */
     public function index()
     {
-        $student = false;
-        $teacher = false;
+
+        $perpage = request()->perpage;
 
 
+        $classroom = ClassRoom::latest()->get();
+
+        $user = User::where("is_admin","!=",1)
+            ->whereHas("role",fn($q) => 
+            $q->where("role_name","student")
+            )
+            ->latest()
+            ->get();
 
         return response()->json([
-            "student" => $student."ok"
+            "user" => $user,
+            "classroom" => $classroom
         ]);
 
     }
 
     public function getAs(){
         $perpage = request()->perpage;
-
     }
 
     /**
@@ -53,7 +63,36 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $valid = request()->validate([
+            "classroom_id" => ["required"]
+        ]);
+
+        unset($valid["student_ids"]);
+
+
+        $class_id = request()->classroom_id;
+        $students = request()->student_ids;
+
+        // prepare data 
+        $valid["class_room_id"] = $class_id;
+        $valid["studied_at"] = request()->studied_at;
+        $valid["successed_at"] = request()->successed_at;
+        $valid["user_id"] = Auth::user()->id;
+
+        // get the class 
+        $class = ClassRoom::find($class_id);
+
+        $class->student()->attach($students);
+
+
+
+        $msg = "<span class=\"has-text-success has-text-weight-bold\">
+            Successs set student </span>";
+
+        return response()->json([
+            "msg" => $msg
+        ]);
     }
 
     /**

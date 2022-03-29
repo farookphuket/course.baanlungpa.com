@@ -22,6 +22,18 @@ class CreateTeachersTable extends Migration
             $table->timestamp("teached_at");
             $table->timestamps();
         });
+
+
+        Schema::create('student_teacher', function (Blueprint $table) {
+            $table->id();
+        
+        
+            $table->foreignId("student_id")->constrained()
+                                        ->onDelete("cascade");
+            $table->foreignId("teacher_id")->constrained()
+                                        ->onDelete("cascade");
+        
+        });
     }
 
     /**
@@ -32,5 +44,6 @@ class CreateTeachersTable extends Migration
     public function down()
     {
         Schema::dropIfExists('teachers');
+        Schema::dropIfExists('student_teacher');
     }
 }

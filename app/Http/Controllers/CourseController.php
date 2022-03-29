@@ -71,6 +71,23 @@ class CourseController extends Controller
         return $rData;
     }
 
+
+    // getFreeCourse
+    public function getFreeCourse(){
+
+        $perpage = request()->perpage;
+
+        $free_pub_course = Course::where("course_is_free","!=",0)
+            ->where("course_is_public","!=",0)
+            ->latest()
+            ->paginate($perpage);
+
+        return response()->json([
+            "course" => $free_pub_course
+        ]);
+    }
+
+
     /**
      * Show the form for creating a new resource.
      *
@@ -125,7 +142,6 @@ class CourseController extends Controller
         $valid["course_year"] = request()->course_year;
         $valid["course_credit"] = request()->course_credit;
 
-        $valid["course_id"] = request()->course_id;
 
 
         // remove the non concern keys from array
@@ -154,31 +170,70 @@ Success course has created
     /** 
      * setCourseCover will return the string of cover image
      * */
-    public function setCourseCover(){
+    public function setCourseCover($course_id=false){
         //$upload_file = request()->course_cover_file;
         $link_url = request()->course_cover_url;
 
         // set the default file if the user not upload or paste the image url
         $file_name = "/img/placeholders/1280x960.png";// default image
 
+        // where upload file will go
+        $upload_to_folder = public_path("user_upload_image/course");
 
-        if(request()->hasFile("course_cover_file")):
-            // folder to upload file 
-            $upload_folder = public_path("user_upload_image/course");
+        $old_pic = '';
 
-            // create new image name include user email and upload date 
-            $new_name = Auth::user()->email."_"; 
-            $new_name .= date("Y-m-d")."_";
-            $new_name .= request()->file("course_cover_file")
-                                  ->getClientOriginalName();
-            // move file to the public folder 
-            request()->file('course_cover_file')
-                     ->move($upload_folder,$new_name);
-            $file_name = $upload_folder."/".$new_name;
-        endif;
+        // insert or update
+        if($course_id):
+            $co = Course::find($course_id);
+            $old_pic = $co->course_cover;
+            $file_name = $old_pic;
 
-        if(filter_var($link_url,FILTER_VALIDATE_URL)):
-            $file_name = $link_url;
+            // on image url
+            if(filter_var($link_url,FILTER_VALIDATE_URL)):
+                $file_name = $link_url;
+            endif;
+
+            // on upload image 
+            if(request()->hasFile('course_cover_file')):
+                $new_name = Auth::user()->email."_";
+                $new_name .= date("Y-m-d")."_";
+                $new_name .= request()->file('course_cover_file')
+                                    ->getClientOriginalName();
+
+                // move upload file to upload folder 
+                request()->file('course_cover_file')
+                         ->move($upload_to_folder,$new_name);
+
+                // set upload file name 
+                $file_name = "/user_upload_image/course/".$new_name;
+
+                // delete the old file 
+                unlink(public_path($old_pic));
+
+            endif;
+
+        else:
+            // no course id 
+            
+            // on image url
+            if(filter_var($link_url,FILTER_VALIDATE_URL)):
+                $file_name = $link_url;
+            endif;
+
+            // on upload image 
+            if(request()->hasFile('course_cover_file')):
+                $new_name = Auth::user()->email."_";
+                $new_name .= date("Y-m-d")."_";
+                $new_name .= request()->file('course_cover_file')
+                                    ->getClientOriginalName();
+
+                // move upload file to upload folder 
+                request()->file('course_cover_file')
+                         ->move($upload_to_folder,$new_name);
+
+                // set upload file name 
+                $file_name = "/user_upload_image/course/".$new_name;
+            endif;
         endif;
 
         return $file_name;
@@ -193,7 +248,13 @@ Success course has created
      */
     public function show(Course $course)
     {
-        //
+        $show_course = Course::where("id",$course->id)
+                    ->with("classroom")
+                    ->get();
+
+        return response()->json([
+            "course" => $show_course
+        ]);
     }
 
     /**
@@ -214,9 +275,68 @@ Success course has created
      * @param  \App\Models\Course  $course
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Course $course)
+    public function update(Course $course)
     {
         //
+        $valid = request()->validate([
+            "classroom" => ["required"],
+            "course_name" => ["required","max:80"],
+            "course_hours" => ["numeric","min:2","max:100"]
+        ],[
+            "classroom.required" => "Error! please select the classroom"
+        ]);
+
+        $c_room_id = request()->classroom;
+        $classroom = ClassRoom::find($c_room_id);
+
+
+        $released = "";
+        if(request()->course_is_public != 0 || 
+            request()->course_is_public != ''):
+            $released = now();
+        endif;
+
+        $cover = $this->setCourseCover($course->id);
+
+        // prepare data 
+        $valid["course_name"] = xx_clean(request()->course_name);
+        $valid["course_cover"] = $cover;
+        $valid["course_excerpt"] = xx_clean(request()->course_excerpt);
+        $valid["course_body"] = xx_clean(request()->course_body);
+
+        $valid["course_is_free"] = !request()->course_is_free?0:1;
+        $valid["course_is_public"] = !request()->course_is_public?0:1;
+        $valid["released_at"] = $released;
+        $valid["course_term"] = request()->course_term;
+        $valid["course_credit"] = request()->course_credit;
+        $valid["course_hours"] = request()->course_hours;
+        $valid["course_year"] = request()->course_year;
+        $valid["course_credit"] = request()->course_credit;
+
+
+
+        // remove the non concern keys from array
+        unset($valid["classroom"]);
+
+        // old course
+        $old_course = Course::find($course->id);
+
+        // create the new course 
+        Course::where("id",$course->id)
+            ->update($valid);
+
+
+        // attach course to classroom 
+        $old_course->classroom()->sync($classroom);
+
+        $msg = "
+<span class=\"has-text-success has-text-weight-bold \">
+Success course id {$old_course->id} has been updated 
+</span>
+";
+        return response()->json([
+            "msg" => $msg
+        ]);
     }
 
     /**
@@ -227,6 +347,18 @@ Success course has created
      */
     public function destroy(Course $course)
     {
-        //
+        
+        $del = Course::find($course->id);
+        $del->delete();
+
+        $msg = "
+<span class=\"has-text-success has-text-weight-bold \">
+Success course has deleted 
+</span>
+";
+        return response()->json([
+            "msg" => $msg,
+            "course" => $course
+        ]);
     }
 }

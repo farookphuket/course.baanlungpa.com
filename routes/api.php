@@ -42,6 +42,12 @@ use Illuminate\Support\Facades\Auth;
 */
 
 
+// course 18 Mar 2022
+Route::get('/free-course',[Course::class,'getFreeCourse'])
+    ->name('getFreeCourse');
+
+Route::get('/course/{course}',[Course::class,'show']);
+
 
 // visitor
 Route::get('/getvisitor',[Visit::class,'getVisitor'])
@@ -153,6 +159,7 @@ Route::prefix("teacher")->name("teacher.")->middleware('auth:sanctum')
                                         ->group(function(){
 
     Route::resource("/course",Course::class);
+
     Route::resource("/student",Student::class);
 
     Route::resource("/classroom",ClassRoom::class);

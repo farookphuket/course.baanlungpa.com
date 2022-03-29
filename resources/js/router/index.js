@@ -18,7 +18,7 @@ import UserResetPassword from "../pages/asPublic/ForgotPassword/UserResetPasswor
 import Visitor from "../pages/asPublic/Visitor.vue"
 
 // course 26 Feb 2022
-import PubCourse from '../pages/asPublic/Course.vue'
+import PubCourse from '../pages/asPublic/Course/Course.vue'
 import CourseView from '../pages/asPublic/Course/CourseView.vue'
 
 import BlogView from "../pages/asPublic/BlogView.vue"
@@ -33,7 +33,10 @@ import TeacherCourse from "../pages/Teacher/Course/Course.vue"
 import ClassRoom from "../pages/Teacher/ClassRoom/ClassRoom.vue"
 import TeacherStudent from '../pages/Teacher/Student/Student.vue'
 
-
+// student 
+import StudentView from "../pages/_include/StudentView.vue"
+import StudentDashboard from "../pages/Student/Student.vue"
+import CourseStudent from "../pages/Student/Course/Course.vue"
 
 // as Admin view 
 import AdminView from "../pages/_include/AdminView.vue" 
@@ -96,12 +99,12 @@ export const routes = [
             },
             {
                 name:"PubCourse",
-                path:'/public-course',
+                path:'/free-course',
                 component:PubCourse,
             },
             {
                 name:"CourseView",
-                path:"/course/:slug",
+                path:"/course/:id",
                 component:CourseView,
             },
 
@@ -171,6 +174,7 @@ export const routes = [
         component:StaticPage,
 
     },
+
     {
         name:"PageNotFound",
         component:PageNotFound,
@@ -395,6 +399,28 @@ export const routes = [
         },
     },
     /* ======== #Teacher route END */
+
+    /* #Student route Start */
+    {
+        
+        path:"/student",
+        component:StudentView,
+        redirect:"student-dashboard",
+        children:[
+            {
+                name:"StudentDashboard",
+                path:"/student-dashboard",
+                component:StudentDashboard,
+            },
+            {
+                name:"CourseStudent",
+                path:"/course-student",
+                component:CourseStudent
+            }
+        ],
+
+    },
+    /* #Student route Start */
 
 ];
 

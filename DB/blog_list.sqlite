@@ -112,7 +112,7 @@ INSERT INTO `blogs`(`user_id`,`bl_title`,`bl_slug`,`bl_excerpt`,
     '
 <div class="columns is-mobile">
 <div class="column">
-<figure class="justify-contenr-center">
+<figure class="justify-content-center">
 <img src="https://www.prachachat.net/wp-content/uploads/2021/09/5-4-728x409.jpg">
 </figure>
 <p class="pt-2 has-text-centered">
@@ -187,5 +187,196 @@ INSERT INTO `blogs`(`user_id`,`bl_title`,`bl_slug`,`bl_excerpt`,
     '2022-03-04 08:10:47',
     '2022-03-04 08:10:47');
 
+
+
+/* ======================= insert Blog id 4 ========================
+ * on 2022-03-11 16:40:05 pm
+ *
+ * */
+INSERT INTO `blogs`(`user_id`,`bl_title`,`bl_slug`,`bl_excerpt`,
+`bl_is_public`,`bl_body`,`created_at`,`updated_at`) VALUES(
+    '1',
+    'เรียนขายของออนไลน์ รุ่น 208 วันที่ 10 มี.ค. 2565',
+    'เรียนขายของออนไลน์-รุ่น-208-วันที่-10-มีค-2565',
+    '<div class="columns is-mobile">
+    <div class="column">
+        <figure class="justify-content-center">
+            <img src="https://i.ibb.co/ckf8Y4y/course98bath-cover-1.jpg">
+        </figure>
+        <p class="pt-2 has-text-centered">
+            เรียนออนไลน์รุ่นที่ 208
+        </p>
+    </div>
+    <div class="column">
+        <div>
+
+
+            <p class="title">
+                เก็บไว้เป็นที่ระลึก และเผื่อใครอยากจะศึกษาคอร์สเรียนดีๆ แบบนี้
+
+            </p>
+            <p>
+                เรียนขายของออนไลน์ รุ่นที่ 208 ที่คุณภาพคับแก้ว แห่งปี 2022(10-12 พ.ศ. 2565)
+                เผื่อมีเพื่อนๆ นักเรียนคอร์สนี้ท่านใดอยากฟังอาจารย์สอนอีกครั้งเพราะว่าฟังไม่ทันในครั้งแรก
+            </p>
+
+        </div>
+    </div>
+</div>',
+    '1',
+    '
+<div class="content">
+
+    <div class="box mb-4">
+        <p class="title has-text-info">
+            เก็บไว้เป็นที่ระลึก
+        </p>
+        <p>
+            หรือหากท่านใดอยากแนะนำให้เพื่อนๆ ดูก็ยินดีนะครับ เรียนคอร์สนี้ได้อะไรดีๆ มากกว่าที่คุณคิด
+        </p>
+        <p>
+            ส่วนผมน่ะเหรอ หึหึหึ กูเก็บเงินแสนเอาไว้ แล้วไปหาทำอย่างอื่นทำเอาว่ะ มันไม่ต่างจากพวก 
+            ขายตรง แชร์ลูกโซ่เลย แถมถ้าทำไปแล้วไม่ได้ผลแล้วเสือกออกมาโวยวาย 
+            ก็จะโดนไอ้พวกเวรมาล้อว่า เรียนไปๆ วิชาไม่เข้าตัวแล้วมาโทษว่าเค้าสอนไม่ดี 
+            โธ่...ไอ้พวกเวร มึงต้องลงทุนค่าโฆษณาไปเป็นสิบๆ ล้านนะ 
+            เอาสิ ฝันให้ไกลไปให้สุด เฟอรรารี่คันต่อไปอาจจะเป็นของมึงว่ะ 
+            เอามาอวดกูบ้างนะ กุจะรอดู
+        </p>
+    </div>
+
+    <div class="video-container">
+        <iframe 
+        src="https://archive.org/embed/thai-course-online-98-thaibath-208-10-mar-2022" width="640" height="480" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen=""></iframe>
+    </div>
+<div class="mt-2 pb-2">
+<div class="video-container">
+<iframe src="https://archive.org/embed/thai-course-class-208-98thaibath-day2" width="640" height="480" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<p class="has-text-centered pt-2">
+เรียนขายของออนไลน์วันที่ 2 รุ่น 208 (เสียงมันค่อยมากๆ ต้องขออภัย)
+</p>
+</div>
+
+<!-- day 2 START -->
+<div class="mt-2 pb-2">
+<div class="video-container">
+<iframe src="https://archive.org/embed/thai-course-class-208-98thaibath-day2" width="640" height="480" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
+<p class="has-text-centered pt-2">
+เรียนขายของออนไลน์วันที่ 2 รุ่น 208 (เสียงมันค่อยมากๆ ต้องขออภัย)
+</p>
+</div>
+<!-- day 2 END -->
+<!-- day 3 START -->
+<div class="mt-2 pb-2">
+<div class="video-container">
+
+<iframe src="https://archive.org/embed/thai-course-online-class-208-day-3" width="640" height="480" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+
+</div>
+<p class="has-text-centered pt-2">
+เรียนขายของออนไลน์วันที่ 3 รุ่น 208
+</p>
+</div>
+<!-- day 3 END -->
+
+<!-- sale dream START -->
+<div class="mt-2 pb-2">
+<div class="video-container">
+
+<iframe src="https://archive.org/embed/thai-online-course-class-208-day-dream" width="640" height="480" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+
+
+</div>
+<p class="has-text-centered pt-2">
+เรียนขายของออนไลน์ รุ่น 208
+</p>
+</div>
+<!-- day dream  END -->
+<p>
+ลองฟังดูดีๆ นะครับ 
+<span class="has-text-weight-bold">
+ไม่มีธุรกิจอะไรในโลกนี้ที่ลงทุน 0 บาท
+</span> 
+น่าเสียดายครับ ผมไม่มีเงิน ถ้ามี 4 แสนนี่ ผมลงหมดตัวเลย แต่ตอนนี้ผมขออยู่นิ่งๆ ก่อนดีกว่าครับ เพราะว่าผมไม่มีเงินจริงๆ แต่ถ้าใครพอมองเห็นลู่ทางก็เชิญนะครับ 
+</p>
+<p>
+มันฟังแปลกๆ นะ สะดุดใจกันบ้างมั้ย ที่เค้าบอกว่า บ้านเค้ากำลังจะโดนยึด แล้วเค้าเอาเงินมาจากไหนตั้ง 3 แสนมาลงทุน หรือ เค้าจนมากๆ ขายของวันนึง 300 500 แล้วต้องเก็บเงินกี่ปีถึงจะมีเงินมาลงทุนตั้ง 3 แสน แต่ยังไงก็ช่าง มันน่าจะไม่ใช่เรื่องขายฝันหรอกมั้ง เพราะว่าคงไม่มีใครเช่าเฟอรารี่มาขับเล่นๆ ถ่ายวิดิโอ 5 นาที 10 นาทีหรอกเนอะ
+</p>
+    <p class="pt-2 has-text-centered">
+        เรียนขายของออนไลน์ คอร์ส 98 บาท รุ่นที่ 208 วันที่ 10 มีนาคม 2565 ฟังเพลินดีนะครับ ก็ลองฟังๆ ดู
+    </p>
+    <p class="mt-4">
+        หากท่านต้องการเขียน คอมเม้น กรุณา 
+<a href="/login" class="button is-link">
+        ล๊อกอิน 
+</a>
+        ก่อนนะครับ
+    </p>
+</div>
+
+',
+    '2022-03-11 16:40:05',
+    '2022-03-11 16:40:05');
+ 
+
+
+/* ======================= insert Blog id 5 ========================
+ * on 2022-03-28 09:05:32 am
+ *
+ * */
+INSERT INTO `blogs`(`user_id`,`bl_title`,`bl_slug`,`bl_excerpt`,
+`bl_is_public`,`bl_body`,`created_at`,`updated_at`) VALUES(
+    '4',
+    'koko var at koh samed on 26-27 mar 2022',
+    'koko-var-at-koh-samed-on-26-27-mar-2022',
+    '<div class="columns is-mobile">
+    <div class="column">
+        <figure class="justify-content-center">
+            <img src="https://i.ibb.co/0JVXtzk/IMG-20220327-112034.jpg">
+        </figure>
+        <p class="pt-2 has-text-centered">
+            โกโก้ว่า ชุด เปิดซิง
+        </p>
+    </div>
+    <div class="column">
+        <p class="title">
+            ที่ระลึกจากวันวาน และ โกโก้วา</p>
+        <p class="mb-4">
+            ไปเที่ยวกันมั้ย จะไปเกาะสเม็ดต่อให้ไปแล้วยังไม่เสร็จ แต่รับรองว่าเด็ดไม่หยอกเลยไง</p>
+    </div>
+</div>',
+    '1',
+    '<div class="content mt-4">
+    <p class="title">
+        ดูรูปถ่ายจากมือถือ
+    </p>
+    <p class="pt-2 pb-4">
+        คลิกที่รูป เพื่อดูรูปจากอัลบั้มใน กูเกิ้ล โฟโต้(google photo)
+    </p>
+    <div class="content mb-4">
+        <a href="https://photos.app.goo.gl/wxVJztD3YGuPLg356" target="_blank" class="image">
+            <img src="https://i.ibb.co/0JVXtzk/IMG-20220327-112034.jpg">
+        </a>
+    </div>
+
+    <p class="title mt-4">
+        ดูวิดิโอ แบบไม่มีเสียง
+    </p>
+    <p class="mb-4 pt-2">
+        วิดิโอนี้อยู่แม้ว่าจะใน youtube แต่ก็จะไม่สามารถเปิดดูได้หากว่าไม่มีลิ้งค์ เพราะเป้นลิ้งค์แบบ 
+        "unlist" ซึ่งจะไม่แสดงใน youtube แม้ว่า "user" จะเป็น "ผู้ติดตาม(follower)" 
+        ก็จะไม่สามารถเห็นวิดิโอนี้ใน youtube ได้เว้นแต่ว่าจะได้รับลิ้งค์จากผู้โพส  
+    </p>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Fe-ZykSPBlw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+    <p class="has-text-centered pt-2 mb-4 has-text-weight-bold">
+        วิดิโอไม่ค่อยมีเสียงนะครับ เพราะว่าอัดด้วยกล้องใต้น้ำไม่ได้ถอดเคส ในยูทูปใส่เพลงไม่ได้ เพราะจะโดนแบนลิขสิทธิ์
+    </p>
+</div>',
+    '2022-03-28 09:05:32',
+    '2022-03-28 09:05:32');
+ 
 
 
